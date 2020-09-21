@@ -29,7 +29,7 @@ function algorithm(step) {
 	let res = [] // my color combinations result
 	let start = 0
 	// pick all possible colors
-	rgb_picker(my_color_range, [], 0, res)
+	rgb_picker(my_color_range, [], start, res)
 
 	return res
 }
