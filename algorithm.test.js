@@ -1,4 +1,3 @@
-// import { step_color, rgb_picker, algorithm } from './algorithm';
 const algorithm = require('./algorithm');
 
 
