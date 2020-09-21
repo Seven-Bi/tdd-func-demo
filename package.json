@@ -1,0 +1,17 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "revise algorithm",
+  "main": "algorithm.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "hi"
+  ],
+  "author": "Steven",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.4.2"
+  }
+}
