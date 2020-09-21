@@ -42,5 +42,20 @@ describe('Test Algorithm', () => {
 	algorithm.rgb_picker(sample_color_range2, [], 0, res2)
 	test('-> rgb_picker with sample color range (length 10), return expect length of combinations', () => {
 		expect(res2.length).toEqual(expect_len_2)
-	});		
+	});
+
+	const sample_color_range3 = [                                                                                                                                                                           
+		0,   8,  16,  24,  32,  40,  48,  56,                                                                                                                                                                         
+		64,  72,  80,  88,  96, 104, 112, 120,                                                                                                                                                                          
+		128, 136, 144, 152, 160, 168, 176, 184,                                                                                                                                                                         
+		192, 200, 208, 216, 224, 232, 240, 248                                                                                                                                                   
+	]
+	
+	let res3 = []
+	algorithm.rgb_picker(sample_color_range3, [], 0, res3)
+	const expect_array = Array.from(new Set(res3));
+	test('-> rgb_picker return array no duplicated items', () => {
+		expect(res3.length).toEqual(expect_array.length)
+	});
+	
 });
